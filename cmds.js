@@ -214,7 +214,7 @@ const{log, biglog, errorlog, colorize} = require("./out");
   */
  exports.creditsCmd = function(rl) {
     log('Autores de la práctica');
-    log('ErosHeavy666 García Arroyo', 'green');
+    log('Eros García Arroyo', 'green');
     log('Luis García Olivares', 'green');
     rl.prompt();
 };
