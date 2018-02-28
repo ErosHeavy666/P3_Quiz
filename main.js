@@ -30,7 +30,7 @@ rl
 	  switch (cmd) {
 	  	  case '':
             rl.prompt();
-	  	  		break
+	  	  		break;
 
 
 	  	    case 'help':
