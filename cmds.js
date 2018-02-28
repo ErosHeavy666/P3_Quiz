@@ -212,9 +212,9 @@ const{log, biglog, errorlog, colorize} = require("./out");
 /**
   * Muestra los nombres de los autores de la práctica.
   */
-  exports.creditsCmd = rl => {
-    //log ('Autores de la práctica:');
-    log ('EROS', 'green');
-   // log ('Luis García Olivares', 'green');
+ exports.creditsCmd = function(rl) {
+    log('Autores de la práctica');
+    log('Eros García Arroyo', 'green');
+    log('Luis García Olivares', 'green');
     rl.prompt();
-  };
+};
