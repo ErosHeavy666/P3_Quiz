@@ -99,8 +99,10 @@ const{log, biglog, errorlog, colorize} = require("./out");
             const quiz = model.getByIndex(id);
             rl.question(`${colorize(quiz.question, 'red')}${colorize('?', 'red')} `, (answer) => {
                 if (answer.trim().toLowerCase() === quiz.answer.toLowerCase()) {
+                	log(` ${colorize('Correcto', 'magenta')}`);
                     biglog('Correcto', 'green');
                 } else {
+                	log(` ${colorize('Incorrecto', 'magenta')}`);
                     biglog('Incorrecto', 'red');
                 }
                 rl.prompt();
